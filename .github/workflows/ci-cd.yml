@@ -10,10 +10,10 @@ jobs:
       - name: "Set Heroku app & branch for ${{ github.ref }}"
         run: |
           if [ "$GITHUB_REF" == "refs/heads/master" ]; then
-          echo "HEROKU_APP=my-app-sho" >> $GITHUB_ENV
+          echo "HEROKU_APP=finalproject95" >> $GITHUB_ENV
           echo "HEROKU_BRANCH=master" >> $GITHUB_ENV
           else
-          echo "HEROKU_APP=juice-shop-staging" >> $GITHUB_ENV
+          echo "HEROKU_APP=finalproject95" >> $GITHUB_ENV
           echo "HEROKU_BRANCH=develop" >> $GITHUB_ENV
           fi
       - name: "Deploy ${{ github.ref }} to Heroku"
